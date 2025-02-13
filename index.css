@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: monospace;
+}
+
+button {
+    font-family: monospace;
+}
+
+#codeInput {
+    width: 30em;
+    height: 30em;
+}
+
+#codeOutputDiv {
+    background-color: #eeeeeeff;
+    width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#codeOutput {
+    padding: 0.3em;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+p {
+    text-align: center;
+    width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+}

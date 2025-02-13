@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TI-MENU Explanation</title>
+        <link href = "index.css", rel = "stylesheet">
+    </head>
+    <body>
+        <h1>TI-MENU</h1>
+        <h2><a href = "index.html">Back</a></h2>
+        <h3>Zasharan2</h3>
+        <h4>Overview</h4>
+        <p>I have coded too many TI-84 applications to count, and often while coding I find myself repeating some of the same patterns over and over again. Namely, I face a lot of repetition when I am creating menu applications. Therefore, I created this interface to simplify some of these repeating patterns slightly.</p>
+        <p>TI-MENU is an abstraction of TI-BASIC, with simplified commands to make creating menu interfaces easier. It is a brace {} based, newline sensitive language. Here is how it works:</p>
+        <br>
+        <h4>Instructions</h4>
+        <p><b>TITLE</b>: This instruction takes one argument: the title of the menu select. It has braces. Within the braces, only OPTION instructions may be placed.</p>
+        <p><b>OPTION</b>: This instruction takes one argument: the name of the option. It has braces. All instructions placed within its braces represent the instructions to be executed upon selecting that option.</p>
+        <p><b>INPUT</b>: This instruction takes at least one argument: the text to display when prompting input (optional), and the variable to store input into. It does not have braces.</p>
+        <p><b>DISPLAY</b>: This instruction takes multiple arguments: The texts or variables to display. It does not have braces.</p>
+        <p><b>WAIT</b>: This instruction takes no arguments. It does not have braces. It will pause program execution, then continue upon the user's pressing of the "Enter" key.</p>
+        <p><b>STOP</b>: This instruction takes no arguments. It does not have braces. It will stop program execution.</p>
+        <p><b>WAITSTOP</b>: This instruction takes no arguments. It does not have braces. It will pause program execution, then stop upon the user's pressing of the "Enter" key.</p>
+        <p><b>NOTE</b>: This instruction takes one argument: the text to be written as a note. It does not have braces. It will display the note text (with multiple pages if necessary), and wait for the user to press enter before stopping.</p>
+        <p><b>IF</b>: This instruction takes one argument: the condition. It has braces. All instructions placed within its braces are executed only if the condition is met.</p>
+        <p><b>ELSE</b>: This instruction takes no arguments. It has braces. All instructions placed within its braces are executed only if the prior IF condition was not met.</p>
+        <p><b>FOR</b>: This instruction takes three arguments: the variable to iterate, the lower bound, and the upper bound. It has braces. All instructions placed within its braces are executed as the variable iterates from the lower bound to the upper bound.</p>
+        <p><b>WHILE</b>: This instruction takes one argument: the iteration condition. It has braces. All instructions placed within its braces are executed while the condition is met.</p>
+        <p><b>MATH</b>: This instruction takes one argument: the mathematical expressions and assignment to be carried. It does not have braces.</p>
+        <p><b>CLEAR</b>: This instruction takes no arguments. It does not have braces. It will clear the screen.</p>
+        <p><b>INJECT</b>: This instruction takes no arguments. It has braces. All TI-BASIC code placed within its braces will be directly inserted to the program as is.</p>
+        <br>
+        <h4>Sample program</h4>
+        <p>The following sample program demonstrates the usage of every instruction.</p>
+        <button id = "copyButton">Copy Output</button>
+        <div id = "codeOutputDiv">
+            <p id = "codeOutput"></p>
+        </div>
+        <script src = "explanation.js"></script>
+    </body>
+</html>
