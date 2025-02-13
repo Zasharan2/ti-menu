@@ -120,7 +120,6 @@ class TINode {
             case "NOTE": {
                 var text = this.value;
                 text = text.match(/.{1,26}/g);
-                console.log(text);
                 if (text.length <= 10) {
                     for (var i = 0; i < text.length; i++) {
                         finalTICode += 'Output(' + (i + 1) + ',1,"' + text[i] + '")\n';
@@ -255,15 +254,10 @@ function parseCode(codeText) {
     finalTICode = "ClrHome\n";
 
     codeText = codeText.split("\n");
-    console.log(codeText);
 
     convertToAST(codeText);
 
-    console.log(progNode);
-
-    console.log(finalTICode);
     progNode.parse();
-    console.log(finalTICode);
 
     codeOutput.innerText = finalTICode;
 }
