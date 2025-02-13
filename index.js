@@ -127,9 +127,9 @@ class TINode {
                     finalTICode += 'Pause \nStop\n';
                 } else {
                     finalTICode += '0\u{2192}P\n';
-                    finalTICode += 'While 1\n';
+                    finalTICode += '-1\u{2192}K\n';
+                    finalTICode += 'While K\u{2260}105\n';
                     finalTICode += 'getKey\u{2192}K\n';
-                    finalTICode += 'If K=105\nThen\nPause \nStop\nEnd\n';
                     //→
                     finalTICode += 'If K=24\nThen\nClrHome\nP-1\u{2192}P\nEnd\n';
                     finalTICode += 'If K=26\nThen\nClrHome\nP+1\u{2192}P\nEnd\n';
@@ -145,7 +145,7 @@ class TINode {
                         finalTICode += 'End\n';
                     }
 
-                    finalTICode += 'End\n';
+                    finalTICode += 'End\nClrHome\n';
                 }
                 
                 // recurse
