@@ -29,6 +29,10 @@
         <p><b>CLEAR</b>: This instruction takes no arguments. It does not have braces. It will clear the screen.</p>
         <p><b>INJECT</b>: This instruction takes no arguments. It has braces. All TI-BASIC code placed within its braces will be directly inserted to the program as is.</p>
         <br>
+        <h4>Extra Notes</h4>
+        <p>Do not use the variables K or P. They are reserved by this system to denote the key pressed and the page number of a NOTE instruction.</p>
+        <p>Be careful when injecting labels. The menu system creates numeric labels based on the IDs of certain instructions. To be completely safe, only alphabetical labels should be used.</p>
+        <br>
         <h4>Sample program</h4>
         <p>The following sample program demonstrates the usage of every instruction.</p>
         <button id = "copyButton">Copy Output</button>
