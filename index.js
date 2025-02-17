@@ -125,7 +125,7 @@ class TINode {
                     for (var i = 0; i < text.length; i++) {
                         finalTICode += 'Output(' + (i + 1) + ',1,"' + text[i] + '")\n';
                     }
-                    finalTICode += 'Pause \nStop\n';
+                    finalTICode += 'Pause \nClrHome\n';
                 } else {
                     finalTICode += '0\u{2192}P\n';
                     finalTICode += '-1\u{2192}K\n';
