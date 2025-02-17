@@ -119,6 +119,7 @@ class TINode {
             }
             case "NOTE": {
                 var text = this.value;
+                text = text.replace(/\\n/g, '\n'); // newline support
                 text = text.match(/.{1,26}/g);
                 if (text.length <= 10) {
                     for (var i = 0; i < text.length; i++) {
