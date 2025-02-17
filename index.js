@@ -128,7 +128,7 @@ class TINode {
                     finalTICode += 'Pause \nClrHome\n';
                 } else {
                     finalTICode += '0\u{2192}P\n';
-                    finalTICode += '-1\u{2192}K\n';
+                    finalTICode += '0-1\u{2192}K\n';
                     finalTICode += 'While K\u{2260}105\n';
                     finalTICode += 'getKey\u{2192}K\n';
                     //→
